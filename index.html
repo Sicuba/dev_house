@@ -1,11 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Sora:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <title>DEV_HOUSE</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="/output.css" />
+  </head>
+  <body class="bg-slate-200 w-full h-full">
+    <div class="w-full flex">
+      <!-- Start Aside -->
+      <aside class="hidden sm:flex bg-white min-h-screen w-full max-w-[200px] flex-col relative py-5 ps-5">
+          <div class="fixed">
+            <div>
+              <h1 class="text-rose-500 font-bold text-2xl">DevHouse</h1>
+            </div>
+
+            <nav class="flex flex-col gap-3 mt-5">
+              <a href="#" class="hover:bg-slate-300 p-3 rounded-md duration-300">
+                Aluguel
+              </a>
+              <a href="#" class="hover:bg-slate-300 p-3 rounded-md duration-300">
+                Comprar
+              </a>
+              <a href="#" class="hover:bg-slate-300 p-3 rounded-md duration-300">
+                Serviços
+              </a>
+              <a href="#" class="hover:bg-slate-300 p-3 rounded-md duration-300">
+                Contactos
+              </a>
+            </nav>
+          </div>
+          <button class="bg-slate-100 duration-300 hover:bg-slate-300  p-4  flex items-center justify-center fixed bottom-5 left-5 rounded-full">
+            <i class="fa fa-phone" style="font-size: 20px"></i>
+          </button>
+      </aside>
+      <!-- End Aside -->
+
+      <!-- Start Main -->
+        <main class="w-full min-h-screen flex flex-col">
+          <div class="w-full h-[10vh] bg-white border-s flex flex-row items-center justify-between px-5">
+              <div class="flex items-center bg-slate-100 p-2 w-full max-w-[70%] md:max-w-[50%] rounded-md">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <input type="search" class="bg-slate-100 outline-none w-full ms-3" placeholder="Procurando um apartamento?">
+              </div>
+              <div class="flex items-center gap-3">
+                <button class="hidden w-10 h-10 bg-slate-100 sm:flex items-center justify-center rounded-full">
+                  <i class="fa fa-heart" aria-hidden="true" style="color: #959595;"></i>
+                </button>
+                <button class="flex items-center justify-center bg-rose-500 px-3 py-[5px] sm:p-[5px] rounded-md text-white gap-3">
+                  <i class="fa fa-user sm:hidden" aria-hidden="true"></i> <p class="hidden sm:flex">Sign In</p> 
+                </button>
+                
+              </div>
+          </div>
+        </main>
+      <!-- End Main -->
+    </div>
+  </body>
 </html>
